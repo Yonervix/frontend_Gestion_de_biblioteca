@@ -1,0 +1,51 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary" class="premium-toolbar">
+    <ion-title class="ion-text-center fw-bold">
+      {{ systemName }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light" class="dashboard-content">
+
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1 class="welcome-title">Bienvenido</h1>
+      <p class="welcome-subtitle">
+        Gestión integral de tu biblioteca
+      </p>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <h2 class="section-title">Accesos Rápidos</h2>
+
+    <ion-grid fixed>
+      <ion-row>
+
+        <ion-col size="12" size-md="6" size-lg="6">
+          <div
+            class="premium-card clickable"
+            (click)="navigateTo('/libro')"
+          >
+            <div class="card-icon-wrapper bg-primary-light">
+              <ion-icon name="book" color="primary"></ion-icon>
+            </div>
+
+            <div class="card-info">
+              <h3>Gestión de Libros</h3>
+              <p>Registrar, editar, eliminar y visualizar libros</p>
+            </div>
+
+            <ion-icon
+              name="chevron-forward"
+              class="arrow-icon"
+            ></ion-icon>
+          </div>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>
